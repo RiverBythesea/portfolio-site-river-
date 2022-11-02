@@ -1,0 +1,88 @@
+/*
+Colours:
+Primary color:#ead3cc (pink)
+Secondary colors:
+  #ab9c8a (light brown)
+  #92bcbf (turquise)
+  #e4883a (orange)
+  #ebbe3e (yellow)
+*/
+
+ body {
+   font-family: 'work sans 300', nunito;
+   font-size: 16px;
+   font-weight: 300;
+   line-height: normal;
+   color: #574a41;
+ }
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 3.052em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.441em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.953em;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.563em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #92bcbf;
+}
+a:hover {
+  color: #e4883a;
+}
+a:focus {
+  color: #e4883a;
+}
+a:visited {
+  color: #ebbe3e;
+}
+a:active {
+  color: #92bcbf;
+}
+
+.button {
+  display: inline-block;
+  background-color: #92bcbf;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #ead3cc;
+  transition: 0.3s opacity;
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:active {
+  background-color: #e4883a;
+}
+
+.button.contact {
+  background-color: #ab9c8a;
+}
+
+.button.contact:hover {
+  background-color: #e4883a;
+}
