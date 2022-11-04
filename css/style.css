@@ -11,13 +11,18 @@ Decorative colors:
   #c4845d (orange)
   #8ca4b4 (blue)
 */
+
 .container {
-  padding: 0 15px;
+  padding: 10px 15px;
+}
+
+.navigation_bar {
+  text-align: center;
 }
 
  body {
    background-color: #eddbdd;
-   font-family: "Work Sans", Nunito;
+   font-family: "PT Serif", Nunito;
    font-size: 16px;
    font-weight: 300;
    line-height: normal;
@@ -27,10 +32,10 @@ Decorative colors:
 
  header {
    background-color: #eddbdd;
-   font-family: "Antic Didone", Nunito;
+   font-family: "Playfair Display", Georgia;
    font-size: 20px;
    font-weight: 700;
-   text-align: center;s
+   text-align: center;
    color: #b05826;
    text-decoration: none;
    text-transform: uppercase;
@@ -74,40 +79,55 @@ Decorative colors:
 
  .row {
    column-count: 2;
+   column-gap: 40px;
+   margin-top: 30px;
+   margin-bottom:30px;
+   column-span: all;
+ }
+
+ .column {
+   padding-left: 20px;
+ }
+
+ .aboutrow {
+   column-count: 2;
    column-gap: 20px;
    margin-top: 30px;
    margin-bottom:30px;
  }
 
- .column_1 {
-   float: left;
- }
+.columnmain {
+  width: 60%;
+}
 
- .column_2 {
-   float: right;
- }
+.columnside {
+  width: 40%;
+}
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
 
 h1 {
-  font-family: "Antic Didone", Nunito;
+  font-family: "Didot", Georgia;
+  font-size: 2.441em;
+  font-weight: 600;
+  color: #61819b;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Didot", Georgia;
   font-size: 2.441em;
   font-weight: 600;
   color: #61819b;
 }
 
-h2 {
-  font-family: "Antic Didone", Nunito;
-  font-size: 2.441em;
-  font-weight: 600;
-  color: #b05826;
-}
-
 h3 {
+  font-family: "Didot", Georgia;
   font-size: 1.953em;
   font-weight: 500;
+  color: #61819c;
 }
 
 h4 {
@@ -115,49 +135,87 @@ h4 {
   font-weight: 400;
 }
 
+.contact.content {
+  padding-top: 40px;
+  text-align: center;
+}
+
+#Emma {
+  text-align: center;
+}
+
 img {
   width: 100%;
 }
 
 a {
-  color: #92bcbf;
+  color: #b05827;
 }
 a:hover {
-  color: #b05826;
+  color: #61819c;
 }
 a:focus {
   color: #b05826;
 }
-a:visited {
-  color: #b05826;
-}
 a:active {
-  color: #92bcbf;
+  color: #eddbdd;
 }
 
 .button {
   display: inline-block;
-  background-color: #92bcbf;
-  color: #ffffff;
+  background-color: #b05827;
+  color: #eddbdd;
   font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #ead3cc;
+  padding: 15px;
+  border-radius: 50px;
+  border-bottom: 2px solid
   transition: 0.3s opacity;
-
-.button:hover {
-  opacity: 0.8;
   text-decoration: none;
 }
 
+.button:hover {
+  background-color: #61819c;
+  color: #eddbdd;
+}
+
 .button:active {
-  background-color: #e4883a;
+  background-color: #eddbdd;
 }
 
-.button.contact {
-  background-color: #ab9c8a;
+.buttoncontact {
+  display: inline-block;
+  background-color: #61819c;
+  color: #eddbdd;
+  font-weight: 400;
+  padding: 15px;
+  border-radius: 50px;
+  border-bottom: 2px;
+  text-decoration: none;
+  margin: 30px;
 }
 
-.button.contact:hover {
-  background-color: #e4883a;
+.buttoncontact:hover {
+  background-color: #9bbeb9;
+}
+
+#social_icons {
+  max-width: 50px;
+}
+
+img.mypic {
+  max-width: 200px;
+  float: center;
+}
+
+.stay.connected {
+  text-align: center;
+}
+
+@media only screen and (min-width:640px) {
+}
+
+@media only screen and (min-width:1024px) {
+}
+
+@media only screen and (min-width:1440px) {
 }

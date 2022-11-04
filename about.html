@@ -40,58 +40,52 @@
         <div>
           <h1> About </h1>
         </div>
-        <div>
-          <picture>
-            <source srcset="img/about_me_small.jpg" media="(max-width:767px)">
-            <img src="img/about_me_large.jpg" alt="River's photo">
-          </picture>
-        </div>
-        <div class="row">
-          <div class="column_1">
+        <div class: "aboutrow">
+          <div class="columnmain">
             <h2> My UX/UI journey </h2>
+            <source srcset="img/about_me_small.jpg" media="(max-width:767px)">
+            <img class="mypic" src="img/about_me_large.jpg" alt="River's photo">
             <p> Hi! I am a Vancouver-based Asian UX designer with an education background in sociology and criminology. I am also a freelance fashion and portrait photographer on the side. My designs are inspired by the films, books and the world I have lived in, captured through my lens which embodies both my cultural racial roots and the unique experiences as an ordinary human drifting in this vast world. </p>
             <p> Humans are visual creatures and I also take that in as my design philosophy. I think designs have to be visually appealing and comfortably to look at because that serves as the first impression for users and can be decisive for whether they want to see the entire design. I also think that good designs should make a diversity of users feel a sense of belonging rather than only serving a few, which is why I believe accessibility and usability is core in design. </p>
-            <a href="#"> View my resume </a>
+              <a href="#" class="button"> View my resume </a>
           </div>
-          <div class="column_2">
-            <div>
+          <div class="columnside">
               <h2> Skills & Tools </h2>
-              <div>
                 <h3> Relevant Skills </h3>
                 <ul>
-                  <li> Research and analytics (user research) </li>
-                  <li> Wireframing </li>
-                  <li> Prototyping </li>
-                  <li> UX writing </li>
-                  <li> User testing </li>
+                  <li> User Research and analytics </li>
+                  <li> Wireframing & Prototyping </li>
+                  <li> Information Architecture </li>
+                  <li> Usability Testing </li>
                   <li> Illustration </li>
+                  <li> UX writing </li>
                 </ul>
-              </div>
-              <div>
                 <h3> Tools I use </h3>
                 <ul>
                   <li> Figma </li>
                   <li> Adobe Photoshop </li>
                   <li> Adobe XD </li>
                   <li> FlowMapp </li>
-                  <li> Procreate </li>
+                  <li> CSS3 </li>
+                  <li> HTML5 </li>
+                  <li> JavaScript</li>
                 </ul>
-              </div>
-            </div>
           </div>
         </div>
+      </div>
     </main>
     <footer>
       <div class="container">
-        <div>
+        <div class="contact content">
+        <div class="stay connected">
           <h2> Stay connected!</h2>
         </div>
         <div>
           <p> If you like my work and would like to discuss opportunities, let's get in touch! Call: <a href="tel:+16046524171">+1 604-652-4171</a> or Skype me at <a href="skype:6046524171"> 6046524171.</a>
           <p> We could also connect via email! </p>
-          <a href="mailto:riverdear.lxc@gmail.com" class="buttoncontact"> Email me </a>
+          <a class="buttoncontact" href="mailto:riverdear.lxc@gmail.com"> Email me </a>
         </div>
-        <div>
+        <div id="social_icons">
           <a href="LINKEDIN_URL" target="_blank">
             <svg preserveAspectRatio="xMidYMidmeet" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
               <defs>
@@ -132,6 +126,7 @@
               </g>
             </svg>
           </a>
+        </div>
         </div>
         <div>
           <p> Copyright RIVER-LIU 2022 </p>
