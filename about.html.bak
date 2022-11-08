@@ -35,24 +35,23 @@
         </nav>
       </div>
     </header>
-    <div>
+    <div id:="about page">
     <main>
       <div class="container">
         <div>
           <h1> About </h1>
         </div>
-        <div class="about row">
-          <div class="introduction column col-6 col-7 col-8 col-9 col-10">
+        <div class:="row">
+          <div class="column col-6 col-7 col-8 col-9 col-10">
             <h2> My UX/UI journey </h2>
-            <div class="center">
-              <source srcset="img/about_me_small.jpg" media="(max-width:767px)">
+            <source srcset="img/about_me_small.jpg" media="(max-width:767px)">
             <img class="mypic" src="img/about_me_large.jpg" alt="River's photo">
-          </div>
             <p> Hi! I am a Vancouver-based Asian UX designer with an education background in sociology and criminology. I am also a freelance fashion and portrait photographer on the side. My designs are inspired by the films, books and the world I have lived in, captured through my lens which embodies both my cultural racial roots and the unique experiences as an ordinary human drifting in this vast world. </p>
-            <p> Humans are visual creatures and I also take that in as my design philosophy. I think designs have to be visually appealing and comfortably to look at because that serves as the first impression for users and can be decisive for whether they want to see the entire design. I also think that good designs should make a diversity of users feel a sense of belonging rather than only serving a few, which is why I believe accessibility and usability is core in design. </p>
-           <p> <a href="#" class="button"> View my resume </a> </P>
+            <p> Humans are visual creatures and I also take that in as my design philosophy. I think designs have to be visually appealing and comfortably to look at because that serves as the first impression for users and can be decisive for whether they want to see the entire design. I also think that good designs should make a diversity of users feel a sense of belonging rather than only serving a few, which is why I believe accessibility and usability is core in design. 
+			    <a href="#" class="button"> View my resume </a> 
+			 </p>
           </div>
-          <div class="skills column col-6 col-5 col-4 col-3 col-2">
+          <div class="column col-6 col-5 col-4 col-3 col-2">
               <h2> Skills & Tools </h2>
                 <h3> Relevant Skills </h3>
                 <ul>
@@ -76,7 +75,6 @@
         </div>
       </div>
     </main>
-  </div>
     </div>
     <footer>
       <div class="container">
