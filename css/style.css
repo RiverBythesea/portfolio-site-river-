@@ -25,12 +25,24 @@ Decorative colors:
   animation-timing-function: linear;
 }
 
+\
+@keyframes rotateAnimation {
+	from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);}
+}
+
 .plant {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
+  transform: rotateY(45deg);
+	animation: rotateAnimation 4s linear infinite;
   animation-direction: alternate;
-  animation-timing-function: linear;
+}
+
+.plant-wrap {
+  perspective: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 
@@ -108,10 +120,8 @@ Decorative colors:
    max-width: 100px;
  }
 
- .row {
-   display: grid;
-   padding: 30px 65px;
-   grid-template-columns: 65% 60%;
+ .photo-padding {
+   padding: 30px 60px;
  }
 
  .row::after {
@@ -119,9 +129,6 @@ Decorative colors:
   clear: both;
   display: table;
 }
-
- .column {
- }
 
 
 h1, h2, h3, h4 {
@@ -170,8 +177,18 @@ h4 {
 }
 
 .about.row {
-  display: grid;
-  grid-template-columns: 75% 60%;
+}
+
+.about-padding {
+  padding:
+}
+
+.skills-padding {
+  padding-left: 80px;
+}
+
+.list-padding {
+  padding-left: 80px;
 }
 
 .introduction {
@@ -278,6 +295,13 @@ img.mypic {
   body {
     font-size: 18px;
   }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .col-6 {width: 50%;}
 }
 
 
@@ -287,25 +311,10 @@ img.mypic {
   margin-left: auto;
   margin-right: auto;
 }
+
+.col-5 {width: 41.66%;}
+.col-7 {width: 58.33%;}
 }
 
 @media only screen and (min-width:1440px) {
 }
-
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
