@@ -63,22 +63,13 @@ Decorative colors:
   position: relative;
 }
 
-.navtoggle.respnsive {
+.navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-}
-
-.navtoggle li .burger {
-  position: absolute;
-  right: 0;
-  padding-right: none;
-  top: 2px;
-  font-size: 20px;
-  color: #b05827;
 }
 
 .navtoggle.responsive li:last-child  {
@@ -87,6 +78,14 @@ Decorative colors:
 
 .navtoggle li:not(:last-child) {
  display: none;
+}
+
+.navtoggle li .burger {
+  position: absolute;
+  right: 0;
+  padding-right: none;
+  top: 2px;
+  font-size: 20px;
 }
 
  body {
