@@ -14,10 +14,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> </link>
     <link rel="stylesheet" type="text/css" href="css/style.css"></link>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="burger" href="img/burger.svg">
   </head>
   <body>
     <header>
       <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
         <a href="index.html" class="logo">
           <img src="img/logo.png" alt="Cute-logo" class="logo">
         </a>
@@ -30,10 +32,17 @@
               <a href="about.html">About</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" onclick="menuToggle()" >Contact</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="burger" onclick="menuToggle()"><i class="fa-solid fa-bars"></i>
+              </a>
+              <svg  class="burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+              </svg>
             </li>
           </ul>
         </nav>
+      </div>
       </div>
     </header>
     <main>
@@ -151,6 +160,10 @@
       </div>
     </div>
     </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

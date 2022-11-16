@@ -35,6 +35,7 @@ Decorative colors:
   transform: rotateY(45deg);
 	animation: rotateAnimation 4s linear infinite;
   animation-direction: alternate;
+  transform-origin: center;
 }
 
 .plant-wrap {
@@ -56,6 +57,36 @@ Decorative colors:
 
 .navigation_bar {
   text-align: center;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.respnsive {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle li .burger {
+  position: absolute;
+  right: 0;
+  padding-right: none;
+  top: 2px;
+  font-size: 20px;
+  color: #b05827;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.navtoggle li:not(:last-child) {
+ display: none;
 }
 
  body {
@@ -81,14 +112,9 @@ Decorative colors:
 
  nav > ul {
    list-style-type: none;
-   padding: 10;
+   padding: 0;
    display: inline-block;
    width: auto;
- }
-
- nav > ul > li {
-   display: inline-block;
-   text-decoration: none;
  }
 
  nav > ul > li > a {
@@ -104,9 +130,10 @@ Decorative colors:
    color: #64849c;
  }
 
+
  #hero {
    display: inline-block;
-   padding: 20px 0;
+   padding: 10px 0;
    width: 100%;
    text-align: center;
  }
@@ -118,6 +145,12 @@ Decorative colors:
  .logo {
    float: left;
    max-width: 100px;
+ }
+
+ .burger {
+   max-width:30px;
+   padding-top: 20px;
+   color: #b05827;
  }
 
  .photo-padding {
@@ -282,11 +315,32 @@ img.mypic {
     padding: 20px 0 13px
   }
 
+  .logo {
+    max-width: 100px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+nav > ul {
+  margin: 1em 0;
+}
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 
   main {
     margin-top: 99px;
