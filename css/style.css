@@ -107,6 +107,7 @@ Decorative colors:
    color: #b05826;
    text-decoration: none;
    text-transform: uppercase;
+   padding: 10px 0 4px;
  }
 
  nav > ul {
